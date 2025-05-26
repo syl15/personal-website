@@ -1,8 +1,10 @@
 @import "tailwindcss";
 
+/* Light theme */
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #F2EFED;
+  --foreground: #201F1F;
+  --font-playfair-display: 'Playfair Display', serif;
 }
 
 @theme inline {
@@ -11,10 +13,11 @@
   --font-sans: var(--font-playfair-display);
 }
 
+/* Dark theme */
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: #1A1A1A;
+    --foreground: #F2EFED;
   }
 }
 
