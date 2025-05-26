@@ -23,3 +23,33 @@ body {
   color: var(--foreground);
   font-family: var(--font-playfair-display), serif;
 }
+
+@layer components {
+  .link-underline {
+    @apply relative;
+  }
+
+  .link-underline::after {
+    content: '';
+    position: absolute;
+    left: 0; 
+    bottom: -0.125rem; 
+    height: 1px; 
+    width: 100%; 
+    background-color: currentColor;
+  }
+
+  @media(hover: hover) {
+    .link-underline::after {
+      width: 0; 
+      transition: width 0.3s ease; 
+    }
+
+    .link-underline:hover::after {
+      width: 100%;
+    }
+  }
+
+
+
+}
