@@ -10,7 +10,7 @@
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-playfair-display);
+  --font-sans: var(--font-playfair-display); 
 }
 
 /* Dark theme */
