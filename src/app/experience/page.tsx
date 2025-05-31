@@ -12,14 +12,6 @@ export default function Experience() {
                     <div className="text-sm text-subtitle">{item.duration} </div>
                     <p className="leading-relaxed">{item.description}</p>
 
-                    {item.tags && (
-                        <div className="flex flex-wrap gap-x-3 gap-y-2 text-sm text-subtitle">
-                            {item.tags.map((tag, i) => (
-                                <span key={i} className=""> {tag} </span>
-                            ))}
-                        </div>
-                    )}
-
                 </section>
             )}
 

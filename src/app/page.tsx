@@ -9,7 +9,7 @@ export default function Home() {
 
           <h1 className="text-4xl italic font-playfair">Hi, I'm Stephanie!</h1>
 
-          <p className="text-lg leading-relaxed font-playfair">
+          <p className="text-lg leading-relaxed">
             I'm a software engineer and a recent computer science graduate from 
             the University of Texas at Dallas. Previously, I worked on ads targeting at Reddit, 
             investment banking technology at JP Morgan Chase & Co, and auto quoting at State Farm.  

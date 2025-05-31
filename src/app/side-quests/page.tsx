@@ -1,5 +1,9 @@
+import Layout from '../../components/Layout';
+
 export default function SideQuests() {
     return (
-        <div>Side Quests</div>
+        <Layout>
+            <h1 className="text-4xl italic font-playfair"> Side Quests </h1>
+        </Layout>
     );
 }
