@@ -15,24 +15,24 @@ export default function Home() {
             investment banking technology at JP Morgan Chase & Co, and auto quoting at State Farm.  
           </p>
           
-          <nav className="flex flex-wrap items-center gap-x-3 gap-y-2 text-lg italic" aria-label="Primary navigation">
-            <Link title="View my professional experiences" className="link-underline" href={'/experience'}> experience </Link>
+          <nav className="flex flex-wrap items-center gap-x-3 gap-y-2 text-lg" aria-label="Primary navigation">
+            <Link title="View my professional experiences" className="link-underline" href={'/experience'}> Experience </Link>
             <span>/</span>
-            <Link title="View my personal projects" className="link-underline" href={'/projects'}> projects </Link>
+            <Link title="View my personal projects" className="link-underline" href={'/projects'}> Projects </Link>
             <span>/</span>
-            <Link title="View my side quests and personal adventures" className="link-underline" href={'/side-quests'}> side quests </Link>
+            <Link title="View my side quests and personal adventures" className="link-underline" href={'/side-quests'}> Side quests </Link>
           </nav>
 
         </div>
       </main>
 
-      <footer className="w-full py-10" aria-label="Contact information">
+      <footer className="w-full py-10 text-footer" aria-label="Contact information">
         <div className="flex flex-wrap items-center sm:justify-center justify-start gap-x-3 gap-y-2 text-sm">
-          <a href="https://www.linkedin.com/in/syangli" target="_blank" className="link-underline">linkedin</a>
+          <a href="https://www.linkedin.com/in/syangli" target="_blank" className="link-underline">LinkedIn</a>
           <span>/</span>
-          <a href="https://github.com/syl15" target="_blank" className="link-underline">github</a>
+          <a href="https://github.com/syl15" target="_blank" className="link-underline">GitHub</a>
           <span>/</span>
-          <a href="mailto:listeph15@gmail.com" target="_blank" className="link-underline">email</a>
+          <a href="mailto:listeph15@gmail.com" target="_blank" className="link-underline">Email</a>
         </div>
       </footer>
     </div>
