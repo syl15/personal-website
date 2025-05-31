@@ -1,38 +1,29 @@
 import {experience} from '../data/experience';
-
+import Layout from '../../components/Layout';
 
 export default function Experience() {
     return (
-        <div className="min-h-screen flex flex-col px-10 lg:px-16 pt-12 md:pt-20 pb-10">
-            <main className="flex-1 flex items-start justify-center">
-                <div className="w-full max-w-3xl space-y-6 text-left">
+        <Layout>
+            <h1 className="text-4xl italic font-playfair"> Work experience </h1>
+            
+            {experience.map((item, index) => 
+                <section key={index} className="space-y-2">
+                    <div className="text-lg font-playfair">{item.title} @ {item.company} </div>
+                    <div className="text-sm text-subtitle">{item.duration} </div>
+                    <p className="leading-relaxed">{item.description}</p>
 
-                    <h1 className="text-4xl italic"> Work experience </h1>
-                    
-                    {experience.map((item, index) => 
-                        <section key={index} className="space-y-2">
-                            <div className="text-lg">{item.title} @ {item.company} </div>
-                            <div className="text-sm">{item.duration} · {item.location} </div>
-                            <ul className="list-dis list-inside space-y-1">
-                                {item.description.map((point, i) => (
-                                    <li key={i}>{point}</li>
-                                ))}
-                            </ul>
-
-                            {item.tags && (
-                                <div className="flex flex-wrap gap-2 text-sm">
-                                    {item.tags.map((tag, i) => (
-                                        <span key={i} className=""> {tag} </span>
-                                    ))}
-                                </div>
-                            )}
-
-                        </section>
+                    {item.tags && (
+                        <div className="flex flex-wrap gap-x-3 gap-y-2 text-sm text-subtitle">
+                            {item.tags.map((tag, i) => (
+                                <span key={i} className=""> {tag} </span>
+                            ))}
+                        </div>
                     )}
 
-                </div>
-            </main>
-        </div>
+                </section>
+            )}
+
+        </Layout>
     );
 
 }

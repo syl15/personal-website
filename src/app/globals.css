@@ -1,17 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap');
 @import "tailwindcss";
+
 
 /* Light theme */
 :root {
   --background: #F2EFED;
   --foreground: #201F1F;
-  --footer-background: #5F5D5D;
-  --font-playfair-display: 'Playfair Display', serif;
+  --subtitle: #5F5D5D;
+  --font-serif: 'Playfair Display', serif;
+  --font-sans: 'Inter', sans-serif;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-playfair-display); 
+  --font-serif: var(--font-serif); 
+  --font-sans: var(--font-sans); 
 }
 
 /* Dark theme */
@@ -19,15 +23,17 @@
   :root {
     --background: #1A1A1A;
     --foreground: #F2EFED;
-    --footer-background: #B3B1AF; /*to do: experiment with colors*/
+    --subtitle: #B3B1AF; /*to do: experiment with colors*/
   }
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: var(--font-playfair-display), serif;
+  font-family: var(--font-sans);
+  font-weight: 400;
 }
+
 
 @layer components {
   .link-underline {
@@ -55,8 +61,14 @@ body {
     }
   }
 
-  .text-footer {
-    color: var(--footer-background);
+  .text-subtitle {
+    color: var(--subtitle);
   }
 
+}
+
+@layer utilities {
+  .font-playfair {
+    font-family: var(--font-serif);
+  }
 }
