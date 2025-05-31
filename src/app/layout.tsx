@@ -1,11 +1,18 @@
 import type { Metadata } from "next";
-import { Playfair_Display } from "next/font/google";
+import { Inter, Playfair_Display } from "next/font/google";
 import "./globals.css";
+
+const inter = Inter({
+  variable: "--font-inter",
+  subsets: ["latin"],
+  display: "swap",
+});
 
 const playfairDisplay = Playfair_Display({
   variable: "--font-playfair-display",
   subsets: ["latin"],
   style: ['normal', 'italic'],
+  display: "swap",
 });
 
 export const metadata: Metadata = {
@@ -21,7 +28,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${playfairDisplay.variable} ${playfairDisplay.variable} antialiased`}
+        className={`${inter.variable} ${playfairDisplay.variable} antialiased`}
       >
         {children}
       </body>

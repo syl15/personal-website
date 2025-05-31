@@ -1,9 +1,11 @@
 import {experience} from '../data/experience';
 import Layout from '../../components/Layout';
+import BackButton from '../../components/BackButton';
 
 export default function Experience() {
     return (
         <Layout>
+            <BackButton/>
             <h1 className="text-4xl italic font-playfair"> Work experience </h1>
             
             {experience.map((item, index) => 
