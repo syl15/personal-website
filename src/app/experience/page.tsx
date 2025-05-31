@@ -1,6 +1,6 @@
-import {experience} from '../data/experience';
-import Layout from '../../components/Layout';
-import BackButton from '../../components/BackButton';
+import {experience} from '@/data/experience';
+import Layout from '@/components/Layout';
+import BackButton from '@/components/BackButton';
 
 export default function Experience() {
     return (
