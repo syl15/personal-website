@@ -5,7 +5,7 @@ import BackButton from '../../components/BackButton';
 export default function Experience() {
     return (
         <Layout>
-            <div className="flex flex-col lg:flex-row lg:items-center gap-4 lg:gap-3 lg:pl-10 relative">
+            <div className="flex flex-col lg:flex-row lg:items-center gap-6 lg:gap-3 lg:pl-10 relative">
                 <div className="lg:absolute lg:-left-6">
                     <BackButton />
                 </div>
