@@ -19,8 +19,8 @@ export default function Home() {
             <Link title="View my professional experiences" className="link-underline" href={'/experience'}> Experience </Link>
             <span>/</span>
             <Link title="View my personal projects" className="link-underline" href={'/projects'}> Projects </Link>
-            <span>/</span>
-            <Link title="View my side quests and personal adventures" className="link-underline" href={'/side-quests'}> Side quests </Link>
+            {/* <span>/</span>
+            <Link title="View my side quests and personal adventures" className="link-underline" href={'/side-quests'}> Side quests </Link> */}
           </nav>
 
         </div>
