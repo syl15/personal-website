@@ -17,7 +17,6 @@ export default function Experience() {
                     <div className="text-lg font-playfair">{item.title} @ {item.company} </div>
                     <div className="text-sm text-subtitle">{item.duration} </div>
                     <p className="leading-relaxed">{item.description}</p>
-
                 </section>
             )}
 

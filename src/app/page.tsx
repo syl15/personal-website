@@ -12,7 +12,7 @@ export default function Home() {
           <p className="text-lg leading-relaxed">
             I'm a software engineer and a recent computer science graduate from 
             the University of Texas at Dallas. Previously, I worked on ads targeting at Reddit, 
-            investment banking technology at JP Morgan Chase & Co, and auto quoting at State Farm.  
+            investment banking tech at JP Morgan Chase, and auto quoting at State Farm.  
           </p>
           
           <nav className="flex flex-wrap items-center gap-x-3 gap-y-2 text-lg font-playfair" aria-label="Primary navigation">
