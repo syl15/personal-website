@@ -38,7 +38,7 @@ export const experience: ExperienceItem[] = [
         title: "Software Engineer Intern", 
         duration: "May 2022 - Aug 2022", 
         location: "Dallas, TX",
-        description: "Software engineer on the Auto Quoting Permissions team. Built an internal permissions tool with React and DynamoDB to streamline quoting workflows. Automated deployments and web delivery to 1000 insurance agents with Terraform and AWS.",
+        description: "Software engineer on the Auto Quoting Permissions team. Built an internal permissions tool with React and DynamoDB to streamline quoting workflows. Automated deployments and web delivery to 1000 insurance agents using Terraform on AWS.",
         tags: ["React", "JavaScript", "AWS", "DynamoDB", "Route53", "CloudFront", "Terraform"]
     }
 
